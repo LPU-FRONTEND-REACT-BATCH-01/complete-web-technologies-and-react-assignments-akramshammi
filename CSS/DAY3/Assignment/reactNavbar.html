@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Clone</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* LEFT (logo + version) */
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    font-size: 20px;
+}
+
+
+
+/* SEARCH BAR */
+.search{
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search input{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #374151;
+    color: white;
+}
+
+/* RIGHT MENU */
+.right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.right a{
+    color: white;
+}
+
+.right a:hover{
+    color: #60a5fa;
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+
+    <!-- LEFT -->
+    <div class="left">
+        <div class="version">v19.2</div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <a href="#">Learn</a>
+        <a href="#">Reference</a>
+        <a href="#">Community</a>
+        <a href="#">Blog</a>
+    </div>
+
+</div>
+
+</body>
+</html>
