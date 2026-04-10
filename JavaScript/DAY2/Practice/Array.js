@@ -70,11 +70,11 @@
 //     ]
 // }
 
-// let totalPrice=cartData.items.reduce((total,item)=>{
-//     return total + item.price*item.quantity;
-// },0);
+let totalPrice=cartData.items.reduce((total,item)=>{
+    return total + item.price*item.quantity;
+},0);
 
-// console.log("Total Price:", totalPrice);
+console.log("Total Price:", totalPrice);
 
 let arr = [1,2,3,34534,65754,3,243,44]
 arr.sort((a,b) => a-b)
