@@ -70,16 +70,16 @@
 //     ]
 // }
 
-let totalPrice=cartData.items.reduce((total,item)=>{
-    return total + item.price*item.quantity;
-},0);
+// let totalPrice=cartData.items.reduce((total,item)=>{
+//     return total + item.price*item.quantity;
+// },0);
 
-console.log("Total Price:", totalPrice);
+// console.log("Total Price:", totalPrice);
 
-let arr = [1,2,3,34534,65754,3,243,44]
-arr.sort((a,b) => a-b)
+// let arr = [1,2,3,34534,65754,3,243,44]
+// arr.sort((a,b) => a-b)
 
-console.log(arr);
+// console.log(arr);
 
 
 
@@ -88,3 +88,7 @@ console.log(arr);
 // arr.forEach((value,index)=>{
 //     console.log("Hello "+value);
 // });
+
+let arr=[1,34,56,6443,6,45,50]
+console.log(arr)
+console.log(...arr)
