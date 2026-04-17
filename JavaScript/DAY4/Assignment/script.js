@@ -4,7 +4,7 @@ let products = [
   { id: 3, name: "Watch", price: 2000 }
 ];
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function displayProducts() {
   let productDiv = document.getElementById("products");
@@ -23,6 +23,8 @@ function displayProducts() {
 function addToCart(id) {
   let item = products.find(p => p.id === id);
   cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
   displayCart();
 }
 function displayCart() {
@@ -41,6 +43,8 @@ function displayCart() {
 
 function removeFromCart(index) {
   cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
   displayCart();
 }
 

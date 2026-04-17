@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+//     "target": "ES2022",
+       "module": "commonjs",
+//     "moduleResolution": "NodeNext",
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noEmitOnError": true,
+    "removeComments" : false,
+    
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+    //"types": ["node"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
