@@ -102,22 +102,44 @@
 
 // export default App;
 
-import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 
-const App = () => {
-  const [count1, setCount1] = useState(1);
+// const App = () => {
+//   const [count1, setCount1] = useState(1);
+
+//   useEffect(() => {
+//     console.log("Count updated:", count1);
+//   }, [count1]);
+
+//   return (
+//     <div style={{ padding: "40px", fontFamily: "Arial" }}>
+//       <h1>{count1}</h1>
+
+//       <h1>This is count : {count1}</h1>
+
+//       <button onClick={() => setCount1(count1 + 1)}>
+//         Increment
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+import React , {useState} from "react";
+ function App(){
+  const [count, setcount] = useState(0);
 
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>1</h1>
-
-      <h1>This is count1: {count1}</h1>
-
-      <button onClick={() => setCount1(count1 + 1)}>
-        Increment
-      </button>
+    <div>
+      <h1>{count}</h1>
+      <button onClick = {() => setcount(count+1)}>
+        Increase</button>
+        <button onClick={() => setcount(count -1)} >
+          Decrease</button> 
     </div>
-  );
-};
-
-export default App;
+  )
+ }
+ export default App;
